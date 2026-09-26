@@ -1,4 +1,4 @@
-// side.js：判定侧（基线：一律给下侧）
+// side.js：判定侧（大等于阈值算上侧，小于算下侧）
 export function sideOf(value, threshold) {
-  return false;
+  return value >= threshold;
 }
